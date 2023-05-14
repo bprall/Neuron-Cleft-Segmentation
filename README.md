@@ -2,7 +2,7 @@
 Synaptic Cleft Segmentation
 
 
-All of the code needed to train, create, and display a synaptic cleft segmentation mask are available in the notebook titled: "Synaptic Segmentation." In order to train the model, you must first download a 3D EM volume to train on, you can download the data I used [here](https://cremi.org/data/) to either train, or create a cleft mask. The model was trained on the "cropped version" of "Dataset A."
+All of the code needed to train, create, and display a synaptic cleft segmentation mask are available in the notebook titled: "Synaptic Segmentation.ipynb". In order to train the model, you must first download a 3D EM volume to train on, you can download the data I used [here](https://cremi.org/data/) to either train, or create a cleft mask. The model was trained on the "cropped version" of "Dataset A."
 
 In order to use this notebook, you will need the following libraries: cv2, h5py, numpy, random, torch, torchvision, sklearn, neuroglancer, and matplotlib.
 
