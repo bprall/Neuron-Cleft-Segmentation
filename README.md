@@ -1,6 +1,7 @@
 # CREMI-Neuron-Cleft-Segmentation
-Synaptic Cleft Segmentation
+Synaptic Cleft Segmentation via a custom CNN.
 
+# Usage
 All of the code needed to train, create, and display a synaptic cleft segmentation mask are available in the notebook titled: "main.ipynb". 
 
 # Data
