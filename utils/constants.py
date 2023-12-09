@@ -1,0 +1,11 @@
+BATCH_SIZE = 10 # Size of batches
+NUM_EPOCH = 10 # Number of training epochs
+NUM_FILTERS = 64 # Number of input filters to the model (must be power of 2)
+lr = .005 # Learning rate for training
+SAMPLE_SHAPE = (32, 64, 64) # Adjust this parameter to change the shape of training/testing samples (each index must be power of 2)
+CLIP_VALUE = .25 # Adjust this parameter on range [0,1] to control the clip value for gradient descent
+IOU_WEIGHT = .00 # Set weight for IoU loss
+DICE_WEIGHT = .750 # Set weight for Dice loss
+BCE_WEIGHT = 1 - IOU_WEIGHT - DICE_WEIGHT # Set weight for BCE loss
+THRESHOLD = 0.01 # Set target threshold for loss functions (very low due to small masks)
+PORT = 9000 # Port for local diplay of segmented data (change to an unused port number)
