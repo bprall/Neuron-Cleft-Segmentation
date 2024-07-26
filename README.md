@@ -30,13 +30,6 @@ All of the hyperparameters for training and mask generation are held in the seco
 
 To run mask generation or display a generated mask using a the pre-trained model or pre-generated mask, you must first run cells 1-11 to load and pre-process the input data, you can then run cell 25 to load the pre-generated segmentaion mask for display. If you want to generate your own mask, run cell 19 so that the model can be instantiated, then you can go down to and run cell 24 to generate your mask (this will overwrite the "segmentation_mask.hdf" file if you have it in the directory). After "Finished Mask Generation" is printed, the mask can be displayed alongside the raw data by running cell 25. This final cell will instantiate a local server running neuroglancer for displaying the volumetric data (you will need to set the "PORT" parameter to an unused port number; it is 9000 by default).
 
-# Contributions
-
-All code was written by Blake Prall.
-
-
-# Below is the Planned Layout for Scripts (work in progress)
-
 # Commands
 To install dependencies
 ```
@@ -52,6 +45,10 @@ To test the model
 ```
 python test.py <path_to_data> <path_to_model_dict>
 ```
+
+# Contributions
+
+All code was written by Blake Prall.
 
 To train the model
 ```
