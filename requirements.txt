@@ -1,9 +1,8 @@
-cv2
+opencv-python
 h5py
 numpy
-random
 torch
 torchvision
-sklearn
+scikit-learn
 neuroglancer
 matplotlib
