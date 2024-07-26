@@ -43,12 +43,12 @@ python app.py <path_to_data> <path_to_model_dict>
 
 To test the model
 ```
-python test.py <path_to_data> <path_to_model_dict>
+python test/test.py <path_to_data> <path_to_model_dict>
 ```
 
 To train the model
 ```
-python train.py <path_to_data>
+python train/train.py <path_to_data>
 ```
 
 # Contributions
