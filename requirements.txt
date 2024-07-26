@@ -1,7 +1,7 @@
 opencv-python
 h5py
 numpy
-torch
+torch==2.1.2
 torchvision
 scikit-learn
 neuroglancer
