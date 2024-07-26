@@ -46,11 +46,11 @@ To test the model
 python test.py <path_to_data> <path_to_model_dict>
 ```
 
-# Contributions
-
-All code was written by Blake Prall.
-
 To train the model
 ```
 python train.py <path_to_data>
 ```
+
+# Contributions
+
+All code was written by Blake Prall.
