@@ -26,7 +26,7 @@ Neuroglancer
 MatPlotLib
 ```
 
-# Components
+## Components
 
 The code includes several components for training and segmentation:
 
@@ -51,7 +51,7 @@ A pre-trained model and pre-generated mask can be found [here](https://drive.goo
 
 To use these files with the notebook, run cells 1-11 to load and pre-process the input data, then run cell 25 to display the pre-generated mask. To generate your own mask, run cell 19 to instantiate the model and cell 24 to generate the mask (this will overwrite segmentation_mask.hdf if it is in the directory). After "Finished Mask Generation" is printed, display the mask alongside the raw data by running cell 25. This final cell starts a local server using Neuroglancer to display the volumetric data (set the PORT parameter to an unused port number; default is 9000).
 
-# Commands
+## Commands
 To install dependencies
 ```
 pip3 install -r requirements.txt
@@ -72,6 +72,9 @@ To train the model
 python train/train.py <path_to_data>
 ```
 
-# Contributions
+## Contributions
 
 All code was written by Blake Prall.
+
+## Note
+In order to use the trained model, CUDA must be set to GPU. Ensure that your environment is properly configured with GPU support to utilize the model effectively.
