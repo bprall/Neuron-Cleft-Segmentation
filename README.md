@@ -4,7 +4,7 @@
 
 ## Usage
 
-All the code needed to train, create, and display a synaptic cleft segmentation mask is available in the notebook titled "main.ipynb." Alternatively, you can use the provided scripts, which are described below.
+All the code needed to train, create, and display a synaptic cleft segmentation mask is available in the scripts and commands described below. Alternatively, you can use notebook titled "main.ipynb," with the cells also described below.
 
 **Note:** You will need to separately download the dataset and optionally the trained model weights and pre-generated mask to run the program.
 
@@ -49,8 +49,6 @@ A pre-trained model and pre-generated mask can be found [here](https://drive.goo
 - `final_trained_synapse_model.pth`: Trained model state dictionary for mask generation.
 - `segmentation_mask.hdf`: Pre-generated segmentation mask for display.
 
-To use these files with the notebook, run cells 1-11 to load and pre-process the input data, then run cell 25 to display the pre-generated mask. To generate your own mask, run cell 19 to instantiate the model and cell 24 to generate the mask (this will overwrite segmentation_mask.hdf if it is in the directory). After "Finished Mask Generation" is printed, display the mask alongside the raw data by running cell 25. This final cell starts a local server using Neuroglancer to display the volumetric data (set the PORT parameter to an unused port number; default is 9000).
-
 ## Commands
 To install dependencies
 ```
@@ -76,6 +74,10 @@ To train the model
 ```
 python train/train.py <path_to_data>
 ```
+
+## Notebook
+
+To use the notebook instead of scripts, run cells 1-11 to load and pre-process the input data, then run cell 25 to display the pre-generated mask. To generate your own mask, run cell 19 to instantiate the model and cell 24 to generate the mask (this will overwrite segmentation_mask.hdf if it is in the directory). After "Finished Mask Generation" is printed, display the mask alongside the raw data by running cell 25. This final cell starts a local server using Neuroglancer to display the volumetric data (set the PORT parameter to an unused port number; default is 9000).
 
 ## Contributions
 
