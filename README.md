@@ -17,7 +17,7 @@ The full report is available in `report.pdf` and provides an in-depth look at th
 
 All the code needed to train, create, and display a synaptic cleft segmentation mask is available in the scripts and commands described below. Alternatively, you can use notebook titled "main.ipynb," with the cells also described below.
 
-**Note:** You will need to separately download the [dataset](https://cremi.org/data/) and optionally the [trained model weights and pre-generated mask](https://drive.google.com/drive/folders/1ML912JIxkp9qZ_mLMdHyseDSaqw0EPec?usp=share_link) to run the program.
+**Note:** You will need to separately download the [dataset](https://cremi.org/data/) and optionally the [trained model weights and pre-generated mask](https://drive.google.com/drive/folders/1ML912JIxkp9qZ_mLMdHyseDSaqw0EPec?usp=share_link) to run the program. Also, to use the pre-trained model, CUDA must be set to GPU. Ensure that your environment is properly configured with GPU support to utilize the pre-trained model effectively.
 
 ## Data
 
@@ -93,6 +93,3 @@ To use the notebook instead of scripts, run cells 1-11 to load and pre-process t
 ## Contributions
 
 All code was written by Blake Prall.
-
-## Note
-In order to use the trained model, CUDA must be set to GPU. Ensure that your environment is properly configured with GPU support to utilize the model effectively.
