@@ -2,6 +2,7 @@ import argparse
 import torch
 import numpy as np
 import h5py
+import time
 import neuroglancer
 from utils.data_preprocessing import normalize
 from utils.constants import (
@@ -105,11 +106,21 @@ def main(data_path, model_path):
     def ngLayer(data, res, oo=[0, 0, 0], tt='segmentation'):
         return neuroglancer.LocalVolume(data, dimensions=res, volume_type=tt, voxel_offset=oo)
 
+    print('Setting up Neuroglancer viewer...')
     with viewer.txn() as s:
         s.layers.append(name='raw', layer=ngLayer(raw, res, tt='image'))
         s.layers.append(name='seg', layer=ngLayer(seg, res, tt='segmentation'))
+    print('Neuroglancer viewer setup complete.')
 
-    print(viewer)
+    print('Viewer URL:', viewer)
+    print('You can view the data at the provided URL in your web browser.')
+
+    # Keep the script running to keep the viewer active
+    try:
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        print('Viewer closed by user.')
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run segmentation model and view results.')

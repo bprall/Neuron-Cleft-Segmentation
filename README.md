@@ -57,9 +57,14 @@ To install dependencies
 pip3 install -r requirements.txt
 ```
 
-To run the application
+To display a pre-generated mask
 ```
-python app.py <path_to_data> <path_to_model_dict>
+python display.py <path_to_data> <path_to_mask>
+```
+
+To generate and display a mask
+```
+python generate.py <path_to_data> <path_to_model_dict>
 ```
 
 To test the model
