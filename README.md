@@ -2,6 +2,25 @@
 
 **Synaptic Cleft Segmentation via a Custom CNN**
 
+## Overview
+
+**Report**: [Mapping Neural Circuits: Synaptic Segmentation](report.pdf)  
+**Author**: Blake Prall
+
+### Summary
+This project explores the use of deep-learning neural networks to map the human connectome, focusing on the segmentation of neuronal synaptic clefts. The central aim is to develop a neural network architecture capable of synaptic cleft segmentation. The hypothesis is that a U-Net3D-like architecture will effectively achieve this task.
+
+#### Key Points
+- **Introduction**: The project addresses the complexity of the human central nervous system and the challenge of mapping neural circuits through segmentation. The goal is to advance connectomics by improving the accuracy of neural and synaptic cleft segmentation.
+- **Methodology**: A voxel-based neural instance segmentation model was developed, incorporating elements from PyTorch Connectomics and pixel-wise neural segmentation methods.
+- **Related Work**: The report reviews existing models and techniques for neuron and synapse segmentation, including PyTorch Connectomics and pixel-wise instance segmentation models.
+- **Loss Functions**: Various loss functions were utilized, including Binary-Cross-Entropy, Dice Loss, and IoU Loss, to enhance model performance and handle class imbalances.
+- **Experiments**: The model was trained on the CREMI challenge dataset, using preprocessing techniques and data augmentation to improve training efficacy. The results showed successful training with high accuracy.
+- **Conclusions**: The project underscores the importance of data in computer vision and suggests potential improvements for the developed model. Despite setbacks, the work contributes to advancing the field of connectomics.
+
+The full report is available in `report.pdf` and provides an in-depth look at the project's development and outcomes.
+
+
 ## Usage
 
 All the code needed to train, create, and display a synaptic cleft segmentation mask is available in the scripts and commands described below. Alternatively, you can use notebook titled "main.ipynb," with the cells also described below.
