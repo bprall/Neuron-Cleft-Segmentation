@@ -10,12 +10,12 @@
 ### Summary
 This project explores the use of deep-learning neural networks to map the human connectome, focusing on the segmentation of neuronal synaptic clefts. The central aim is to develop a neural network architecture capable of synaptic cleft segmentation. The hypothesis is that a U-Net3D-like architecture will effectively achieve this task.
 
-The full report is available in `report.pdf` and provides an in-depth look at the project's development and outcomes.
+The full report is available in `report.pdf` and provides an in-depth look at the project's development and outcomes .Additionally, you can download the development notebook, notebook.ipynb, to gain deeper insights into the program’s functionality and implementation.
 
 
 ## Usage
 
-All the code needed to train, create, and display a synaptic cleft segmentation mask is available in the scripts and commands described below. Alternatively, you can use notebook titled "main.ipynb," with the cells also described below.
+All the code needed to train, create, and display a synaptic cleft segmentation mask is available in the scripts and commands described below.  Additionally, you can download the [development notebook](), `notebook.ipynb`, to gain deeper insights into the program’s functionality and implementation.
 
 **Note:** You will need to separately download the [dataset](https://cremi.org/data/) and optionally the [trained model weights and pre-generated mask](https://drive.google.com/drive/folders/1ML912JIxkp9qZ_mLMdHyseDSaqw0EPec?usp=share_link) to run the program. Also, to use the pre-trained model, CUDA must be set to GPU. Ensure that your environment is properly configured with GPU support to utilize the pre-trained model effectively.
 
