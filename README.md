@@ -10,7 +10,7 @@
 ### Summary
 This project explores the use of deep-learning neural networks to map the human connectome, focusing on the segmentation of neuronal synaptic clefts. The central aim is to develop a neural network architecture capable of synaptic cleft segmentation. The hypothesis is that a U-Net3D-like architecture will effectively achieve this task.
 
-The full report is available in `report.pdf` and provides an in-depth look at the project's development and outcomes .Additionally, you can download the development notebook, notebook.ipynb, to gain deeper insights into the program’s functionality and implementation.
+The full report is available in `report.pdf` and provides an in-depth look at the project's development and outcomes. Additionally, you can download the development notebook, notebook.ipynb, to gain deeper insights into the program’s functionality and implementation.
 
 
 ## Usage
