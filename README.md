@@ -61,6 +61,8 @@ A pre-trained model and pre-generated mask can be found [here](https://drive.goo
 - `segmentation_mask.hdf`: Pre-generated segmentation mask for display.
 
 ## Commands
+**All commands should be executed from the root directory of the project.**
+
 To install dependencies
 ```
 pip3 install -r requirements.txt
